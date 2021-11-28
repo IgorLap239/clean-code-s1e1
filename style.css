@@ -42,16 +42,19 @@
   display: flex;
 }
 
-.incompleted-tasks-list, .completed-tasks-list {
+.incompleted-tasks-list,
+.completed-tasks-list {
   margin: 0;
   padding: 0px;
 }
 
-.list-item, .list-title {
+.list-item,
+.list-title {
   list-style: none;
 }
 
-.task-input,.task-btn{
+.task-input,
+.task-btn {
   outline: none;
 }
 
