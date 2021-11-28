@@ -40,10 +40,12 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.className="task-input"
+    checkBox.classList.add("task-input")
+    checkBox.classList.add("task-check-input")
     editInput.type="text";
     editInput.classList.add('task');
     editInput.classList.add('task-input');
+    editInput.classList.add('task-text-input');
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.classList.add('edit');
@@ -107,7 +109,6 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    console.log(listItem);
     listItem.classList.toggle("edit-mode");
 };
 
