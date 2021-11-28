@@ -6,12 +6,12 @@
   <title>Todo App</title>
 </head>
 <body class="page">
-  <div class="centered-header-page-element">
+  <div class="header">
     <img class="header-img" src="./eisenhower-matrix.jpg">
     <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
-  <div class="centered-main-page-element">
-    <p id="top-section-for-adding-element-to-list">
+  <div class="main">
+    <p id="create-task-block">
       <label class="new-task-label" for="new-task">Add Item</label>
       <div class="task-row-wrapper">
         <input class="task" id="new-task" type="text">
@@ -19,31 +19,31 @@
       </div>
     </p>
     <h3 class="list-title">Todo</h3>
-    <ul class="incompleted-tasks-list" id="incomplete-tasks">
+    <ul class="incompleted-tasks" id="incomplete-tasks">
       <li class="list-item">
-        <input class="task-input" type="checkbox">
+        <input class="task-input task-check-input" type="checkbox">
         <label class="task-label task">Pay Bills</label>
-        <input class="task-input task" type="text">
+        <input class="task-input task-text-input task" type="text">
         <button class="edit task-btn">Edit</button>
         <button class="delete task-btn">
           <img class="btn-img" src="./remove.svg">
         </button>
       </li>
       <li class="list-item edit-mode">
-        <input class="task-input" type="checkbox">
+        <input class="task-input task-check-input" type="checkbox">
         <label class="task-label task">Go Shopping</label>
-        <input class="task-input task" type="text" value="Go Shopping">
+        <input class="task-input task-text-input task" type="text" value="Go Shopping">
         <button class="edit task-btn">Save</button>
         <button class="delete task-btn">
           <img class="btn-img" src="./remove.svg"></button>
       </li>
     </ul>
     <h3>Completed</h3>
-    <ul class="completed-tasks-list" id="completed-tasks">
+    <ul class="completed-tasks" id="completed-tasks">
       <li class="list-item">
-        <input class="task-input" type="checkbox" checked>
+        <input class="task-input task-check-input" type="checkbox" checked>
         <label class="task-label task">See the Doctor</label>
-        <input class="task-input task" type="text">
+        <input class="task-input task-text-input task" type="text">
         <button class="edit task-btn">Edit</button>
         <button class="delete task-btn">
           <img class="btn-img" src="./remove.svg">
